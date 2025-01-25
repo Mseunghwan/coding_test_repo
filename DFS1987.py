@@ -23,6 +23,6 @@ def dfs(y, x):
             dfs(ny, nx)
             visit.remove(ground[ny][nx]) # 백트래킹 사용 ->  A - B - C 가 아니라 A - E - F  다양하게 가도록
                 
-dfs(0, 0, )
+dfs(0, 0)
 print(cnt)
         
