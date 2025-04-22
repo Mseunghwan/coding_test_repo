@@ -17,3 +17,4 @@ for _ in range(m):
         print(poke_name[int(call) - 1])
     else :
         print(poke_num[call] + 1)
+# https://www.acmicpc.net/problem/1620
