@@ -1,0 +1,13 @@
+import sys
+from itertools import permutations
+
+input = sys.stdin.readline
+
+n, m = map(int, input().split())
+now = list(map(int, input().split()))
+
+result = set(permutations(now, m))
+result = sorted(result)
+for now in result :
+    print(' '.join(map(str, now)))
+    
