@@ -15,7 +15,7 @@ for i in range(t):
     lst.append(list(map(int, input().split())))
 
     if n == 1:
-        print(max(dp[0][0], dp[1][0]))
+        print(max(lst[0][0], lst[1][0]))
         continue
     dp[0][0] = lst[0][0]
     dp[1][0] = lst[1][0]
@@ -27,7 +27,6 @@ for i in range(t):
         dp[1][j] = max(dp[0][j-1], dp[0][j-2]) + lst[1][j]
         
     print(max(dp[0][n-1], dp[1][n-1]))
-
     """
     정확한 점화식:
 
