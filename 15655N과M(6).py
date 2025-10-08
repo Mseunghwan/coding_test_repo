@@ -1,0 +1,25 @@
+import sys
+
+input = sys.stdin.readline
+
+N, M = map(int, input().split())
+
+numbers = list(map(int, input().split()))
+
+numbers.sort()
+
+def backtracking(nums, where, M) : 
+    if len(nums) == M : 
+        for i in range(M) : 
+            print(nums[i], end = " ")
+        print()
+        return
+    for i in range(where, N) : 
+        if numbers[i] in nums : 
+            continue
+        nums.append(numbers[i])
+        backtracking(nums, i, M)
+        nums.pop()
+
+for i in range(N) : 
+    backtracking([numbers[i]], i, M)
