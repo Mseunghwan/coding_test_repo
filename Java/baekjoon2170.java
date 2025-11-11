@@ -1,4 +1,3 @@
-package coding_test_repo;
 import java.io.*;
 import java.util.*;
 
