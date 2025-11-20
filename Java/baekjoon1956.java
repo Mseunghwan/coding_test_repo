@@ -2,9 +2,12 @@ import java.io.*;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
+// 플로이드 워셜의 시간 복잡도 : O(V^3)
+// V가 최대 400?
+// 400 ^ 3 = 64,000,000, 6천 4백만
+// Java : 1초에 약 1 ~ 3억번 까지도 연산 가능하니 시간 제한 2초 내로 가능
 public class baekjoon1956 {
     public static int INF = Integer.MAX_VALUE; 
-    
     
     public static void main(String[] args) throws IOException {
     	
