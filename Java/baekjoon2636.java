@@ -20,6 +20,7 @@ public class baekjoon2636 {
     static int[] dy = {1, 0, -1, 0};
     static int[] dx = {0, -1, 0, 1};
 
+    // 공기 채우기
     static void Air_BFS(int a, int b){
         Queue<Node> queue = new LinkedList<>();
 
@@ -57,6 +58,8 @@ public class baekjoon2636 {
         int temp_cnt = 0;
         ArrayList<Node> remove_list = new ArrayList<>();
         
+
+        // 공기 채울데가 있는지 체크
         for(int i = 0; i < N; i++){
             for(int j = 0; j < M; j++){
                 if(maps[i][j] == -1){
@@ -73,6 +76,7 @@ public class baekjoon2636 {
             }
         }
 
+        // -1이면 주변 0 부분 채우기
         for(int i = 0; i < N; i++){
             for(int j = 0; j < M; j++){
                 if(maps[i][j] == -1){
