@@ -16,8 +16,7 @@ public class beakjoon2437 {
             choo[i] = Integer.parseInt(st.nextToken());
         }
 
-        // 만들수 있는지 없는지 확인하는 check 함수
-
+        // 콜롬버스의 달걀
         Arrays.sort(choo);
         int sum = 0;
         for(int i = 0 ; i < N; i++){
