@@ -2,30 +2,30 @@
 
 ## 1️⃣ Spring 기본 철학 & 기반 개념
 
-- [ ] [10분 테코톡] 루키의 Servlet & Spring Web MVC
-- [ ] [10분 테코톡] 🐶 코기의 Servlet vs Spring
-- [ ] [10분 테코톡] 🌻타미의 Servlet vs Spring
-- [ ] [10분 테코톡] 👨‍🎨규동의 Servlet & Spring
+- [x] [10분 테코톡] 루키의 Servlet & Spring Web MVC
+- [x] [10분 테코톡] 🐶 코기의 Servlet vs Spring
+- [x] [10분 테코톡] 🌻타미의 Servlet vs Spring
+- [x] [10분 테코톡] 👨‍🎨규동의 Servlet & Spring
 
 ---
 
 ## 2️⃣ IoC / DI / Bean / 생명주기
 
-- [ ] [10분 테코톡] 👨‍🔧유안의 Spring IoC/DI
-- [ ] [10분 테코톡] 가콩의 Spring Bean은 왜
-- [ ] [10분 테코톡] 모루의 Spring Bean의 생명주기 들여다보기
-- [ ] [10분 테코톡] 주디의 Spring Bean
+- [x] [10분 테코톡] 👨‍🔧유안의 Spring IoC/DI
+- [x] [10분 테코톡] 가콩의 Spring Bean은 왜
+- [x] [10분 테코톡] 모루의 Spring Bean의 생명주기 들여다보기
+- [x] [10분 테코톡] 주디의 Spring Bean
 
 ---
 
 ## 3️⃣ Spring Boot 핵심 구조 이해
 
-- [ ] [10분 테코톡] 땡이의 SpringBoot 알아보기
-- [ ] [10분 테코톡] 🏀 에어의 Spring vs Spring Boot
-- [ ] [10분 테코톡] 🦊닉의 Spring vs Spring Boot
-- [ ] [10분 테코톡] 💎 또링의 Spring과 Spring Boot
-- [ ] [10분 테코톡] 🦆러너덕의 Springboot autoConfiguration
-- [ ] [10분 테코톡] 차니의 Spring Boot Profile과 외부 설정
+- [x] [10분 테코톡] 땡이의 SpringBoot 알아보기
+- [x] [10분 테코톡] 🏀 에어의 Spring vs Spring Boot
+- [x] [10분 테코톡] 🦊닉의 Spring vs Spring Boot
+- [x] [10분 테코톡] 💎 또링의 Spring과 Spring Boot
+- [x] [10분 테코톡] 🦆러너덕의 Springboot autoConfiguration
+- [x] [10분 테코톡] 차니의 Spring Boot Profile과 외부 설정
 
 ---
 
@@ -296,3 +296,4 @@
 - [ ] [10분 테코톡] 🪓 문어의 Thread Safe한 코딩하기
 - [ ] [10분 테코톡] 🍩 볼트의 Validation의 모든 것
 - [ ] [10분 테코톡] 🧊 하제의 Serialization 이란 무엇인가?
+
