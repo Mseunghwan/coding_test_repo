@@ -1,0 +1,455 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon10026",
+            "request": "launch",
+            "mainClass": "baekjoon10026",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon10157",
+            "request": "launch",
+            "mainClass": "baekjoon10157",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon10163",
+            "request": "launch",
+            "mainClass": "baekjoon10163",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon1106",
+            "request": "launch",
+            "mainClass": "baekjoon1106",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon11404",
+            "request": "launch",
+            "mainClass": "baekjoon11404",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon1149",
+            "request": "launch",
+            "mainClass": "baekjoon1149",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon1197",
+            "request": "launch",
+            "mainClass": "baekjoon1197",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon1238",
+            "request": "launch",
+            "mainClass": "baekjoon1238",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon1261",
+            "request": "launch",
+            "mainClass": "baekjoon1261",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon12852",
+            "request": "launch",
+            "mainClass": "baekjoon12852",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon12865",
+            "request": "launch",
+            "mainClass": "baekjoon12865",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon13300",
+            "request": "launch",
+            "mainClass": "baekjoon13300",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon13423",
+            "request": "launch",
+            "mainClass": "baekjoon13423",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon13549",
+            "request": "launch",
+            "mainClass": "baekjoon13549",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon14696",
+            "request": "launch",
+            "mainClass": "baekjoon14696",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon14888",
+            "request": "launch",
+            "mainClass": "baekjoon14888",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon14938",
+            "request": "launch",
+            "mainClass": "baekjoon14938",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon1504",
+            "request": "launch",
+            "mainClass": "baekjoon1504",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon15659",
+            "request": "launch",
+            "mainClass": "baekjoon15659",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon15663",
+            "request": "launch",
+            "mainClass": "baekjoon15663",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon15686",
+            "request": "launch",
+            "mainClass": "baekjoon15686",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon1600",
+            "request": "launch",
+            "mainClass": "baekjoon1600",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon16964",
+            "request": "launch",
+            "mainClass": "baekjoon16964",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon1719",
+            "request": "launch",
+            "mainClass": "baekjoon1719",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon17244",
+            "request": "launch",
+            "mainClass": "baekjoon17244",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon17298",
+            "request": "launch",
+            "mainClass": "baekjoon17298",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon1753",
+            "request": "launch",
+            "mainClass": "baekjoon1753",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon1759",
+            "request": "launch",
+            "mainClass": "baekjoon1759",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon18428",
+            "request": "launch",
+            "mainClass": "baekjoon18428",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon1916",
+            "request": "launch",
+            "mainClass": "baekjoon1916",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon1926",
+            "request": "launch",
+            "mainClass": "baekjoon1926",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon1931",
+            "request": "launch",
+            "mainClass": "baekjoon1931",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon1941",
+            "request": "launch",
+            "mainClass": "baekjoon1941",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon1956",
+            "request": "launch",
+            "mainClass": "baekjoon1956",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon2146",
+            "request": "launch",
+            "mainClass": "baekjoon2146",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon2170",
+            "request": "launch",
+            "mainClass": "baekjoon2170",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon2230",
+            "request": "launch",
+            "mainClass": "baekjoon2230",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon2309",
+            "request": "launch",
+            "mainClass": "baekjoon2309",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon24479",
+            "request": "launch",
+            "mainClass": "baekjoon24479",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon2457",
+            "request": "launch",
+            "mainClass": "baekjoon2457",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon2467",
+            "request": "launch",
+            "mainClass": "baekjoon2467",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon2564",
+            "request": "launch",
+            "mainClass": "baekjoon2564",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon2605",
+            "request": "launch",
+            "mainClass": "baekjoon2605",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon2628",
+            "request": "launch",
+            "mainClass": "baekjoon2628",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon2636",
+            "request": "launch",
+            "mainClass": "baekjoon2636",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon2669",
+            "request": "launch",
+            "mainClass": "baekjoon2669",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon2812",
+            "request": "launch",
+            "mainClass": "baekjoon2812",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "baekjoon9372",
+            "request": "launch",
+            "mainClass": "baekjoon9372",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "beakjoon11780",
+            "request": "launch",
+            "mainClass": "beakjoon11780",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "beakjoon2437",
+            "request": "launch",
+            "mainClass": "beakjoon2437",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "beakjoon2578",
+            "request": "launch",
+            "mainClass": "beakjoon2578",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "problem1000",
+            "request": "launch",
+            "mainClass": "problem1000",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "problem1001",
+            "request": "launch",
+            "mainClass": "problem1001",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "problem12712",
+            "request": "launch",
+            "mainClass": "problem12712",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "problem1753",
+            "request": "launch",
+            "mainClass": "problem1753",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "problem1916",
+            "request": "launch",
+            "mainClass": "problem1916",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "problem1936",
+            "request": "launch",
+            "mainClass": "problem1936",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "problem1959",
+            "request": "launch",
+            "mainClass": "problem1959",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "problem1961",
+            "request": "launch",
+            "mainClass": "problem1961",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "problem2058",
+            "request": "launch",
+            "mainClass": "problem2058",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "problem2063",
+            "request": "launch",
+            "mainClass": "problem2063",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "problem2589",
+            "request": "launch",
+            "mainClass": "problem2589",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
+            "name": "problem5427",
+            "request": "launch",
+            "mainClass": "problem5427",
+            "projectName": "coding_test_repo"
+        }
+    ]
+}

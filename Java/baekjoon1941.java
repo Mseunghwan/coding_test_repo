@@ -2,83 +2,119 @@ import java.util.*;
 import java.io.*;
 
 public class baekjoon1941 {
-	static int[] dy = {1, 0, -1, 0};
-	static int[] dx = {0, 1, 0, -1};
+
 	static int rs = 0;
+
 	static char[][] maps;
-	static void BackTracking(boolean[][] visited, int y, int x, int cnt, int y_cnt) {
+
+	// ì–´ëŠ ìë¦¬ì˜ ì‚¬ëŒì„ ë½‘ì•˜ëŠ”ì§€ ê¸°ë¡ - BFS ìˆœíšŒí•´ì•¼ í•  ì¡°í•©
+	static int[] pick = new int[7];
+
+	// ì´ë‹¤ì†œ íŒŒê°€ ìµœì†Œ 4ëª… ì´ìƒì´ì–´ì•¼ í•˜ë‹ˆ,
+	static void BackTracking(int cnt, int lim_cnt, int start){
 		
-		if(cnt == 7) {
-			if(y_cnt < 4) {
-				rs += 1;
-				return;
-			}
-		}
-		if(7 - y_cnt < 4) {
+		// ë§Œì•½ ë‚¨ì€ ê²½ìš°ë¥¼ ë‹¤ í•´ë„ ì´ë‹¤ì†œíŒŒ 4ëª…ì„ ì±„ìš¸ ìˆ˜ ì—†ìœ¼ë©´ return
+		// ì¦‰ ì„ë„ì—°íŒŒ ì¸ì›ì´ 4 ì´ìƒì´ë¼ë©´
+		if(lim_cnt >= 4){
 			return;
 		}
+
+		if(cnt == 7){
+			if(BFS()){
+				rs += 1;
+			}
+
+			return;
+		}
+
+		for(int i = start ; i < 25; i++){
+			int y = i / 5;
+			int x = i % 5;
+
+			pick[cnt] = i;
+			if(maps[y][x] == 'Y'){
+				BackTracking(cnt + 1, lim_cnt + 1, i + 1);
+			}
+			else if(maps[y][x] == 'S'){
+				BackTracking(cnt + 1, lim_cnt, i + 1);
+			}
+					
+		}
+
+	}
+
+	static int[] dx = {1, 0, -1, 0};
+	static int[] dy = {0, -1, 0, 1};
+
+	static boolean BFS(){
+
+		Queue<Integer> queue = new LinkedList<>();
+
+		boolean[][] visited = new boolean[5][5];
+
+		// ì§€ê¸ˆ ë½‘ì€ pickì„ ì§€ë„ë¡œ ê·¸ë ¤ì£¼ê¸°(ì•„ë˜ while - if ë¬¸ ë‚´ì—ì„œ ì°¾ê¸° í¸í•˜ê²Œ í•˜ê¸° ìœ„í•¨)
+		boolean[][] my_member = new boolean[5][5];
+		for(int idx : pick){
+			my_member[idx/5][idx%5] = true;
+		}
 		
-		for(int i = 0; i < 4; i++) {
-			int ny = y + dy[i];
-			int nx = x + dx[i];
-			
-			int is_Y = 0;
-			if(0 <= ny && ny < 5 && 0 <= nx && nx < 5 && visited[ny][nx] == false) {
-				if(maps[ny][nx] == 'Y') {
-					is_Y = 1;
+		queue.add(pick[0]);
+		visited[pick[0] / 5][pick[0] % 5] = true;
+
+		// ì¹´ìš´íŠ¸ ì‹œì‘(ëª‡ ëª…ì´ í†µê³¼í–ˆëŠ”ì§€, ëª¨ë‘ í†µê³¼í•˜ë©´ íŒ¨ìŠ¤í•œ ê²ƒ)
+		int cnt = 1;
+
+		while(!queue.isEmpty()){
+			int now = queue.poll();
+
+			int y = now / 5;
+			int x = now % 5;
+
+			for(int i = 0; i < 4; i++){
+				int ny = y + dy[i];
+				int nx = x + dx[i];
+
+				if(0 <= ny && ny < 5 && 0 <= nx && nx < 5 && visited[ny][nx] == false){
+					if(my_member[ny][nx]){
+						visited[ny][nx] = true;
+						queue.add((ny * 5) + nx);
+						cnt += 1;
+					}
 				}
-				visited[ny][nx] = true;
-				BackTracking(visited, ny, nx, cnt + 1, y_cnt + is_Y);
-				visited[ny][nx] = false;
-				
+
 			}
 		}
-	}
+		// ë‹¤ ëŒì•˜ì„ ë–„, 7ëª…ì„ ë‹¤ ëŒì•˜ìœ¼ë©´ í†µê³¼í•œ ê²ƒ.
+		return cnt == 7;
 	
+	}
+
 	public static void main(String args[]) throws IOException{
-		
+
+		// ì¹ ê³µì£¼ ë¬¸ì œ
+		// BackTrackingìœ¼ë¡œ 7ëª…ì˜ ì¡°í•©ì„ ë½‘ê³ , ê·¸ ì¡°í•©ì´ ë¶™ì–´ìˆëŠ”ì§€ BFSë¡œ í™•ì¸í•˜ê¸°
+
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		
+
 		maps = new char[5][5];
-		
-		for(int i = 0; i < 5; i++) {
+
+		for(int i = 0; i < 5; i++){
 			String line = br.readLine();
-			for(int j = 0; j < 5; j++) {
+			for(int j = 0; j < 5; j++){
 				maps[i][j] = line.charAt(j);
 			}
 		}
-		
-		
-		// °æ·Î´Â ´ÙÀ½°ú °°Àº ·êÀ» Æ÷ÇÔÇØ¾ß ÇÑ´Ù
-		// 1. 7¸¸Å­ÀÇ ±æÀÌ¸¦ °®´Â´Ù(ÀÎÁ¢ÇØ ÀÖ¾î¾ß ÇÑ´Ù)
-		// 2. ÇØ´ç  °æ·Î¿¡ Y°¡ ÇÏ³ªµµ ¾ø¾î¼± ¾ÈµÈ´Ù
-		// 3. ´Ù¸¸ °æ·Î ³» Y°¡ 4 ¹Ì¸¸ÀÌ¾î¾ß ÇÑ´Ù --> S°¡ 4 ÀÌ»óÀÌ¾î¾ß ÇÑ´Ù
-		
-		// Á¢±Ù¹ı : ¸ğµç ÁÂÇ¥¸¦ ¼øÈ¸ÇÏ¸é ÇØ´ç ÁÂÇ¥¿¡¼­ ±íÀÌ ¿ì¼± Å½»öÀ» ÁøÇàÇÑ´Ù
-		// Å½»ö Áß À§ °æ·Î Á¶°ÇÀ» ¸ÂÃßÁö ¸øÇÑ´Ù¸é ¹éÆ®·¡Å·À¸·Î ¹Ù·Î break
-		// ½Ã°£ ÅÍÁú°Å°°Àºµ¥ ¹éÆ®·¡Å·À¸·Î ÇÑ¹ø Á¶Á®ºÁ¾ß°Ú´Ù.
-		
-		for(int i = 0; i < 5; i++) {
-			for(int j = 0; j < 5; j++) {
-				int y = 0;
-				boolean[][] visited = new boolean[5][5];
-				visited[i][j] = true;
-				if(maps[i][j] == 'Y') {
-					y = 1;
-				}
-				BackTracking(visited, i, j, 1, y);
-			}
-		}
-		
+
+		BackTracking(0, 0, 0);
+
 		bw.write(String.valueOf(rs));
+		
+
 		bw.flush();
 		bw.close();
 		br.close();
-		
-		
-		// ¼Ò¹®³­ Ä¥°øÁÖ
-		
-		
+
 	}
+
 }
