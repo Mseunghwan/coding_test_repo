@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "baekjoon2178",
+            "request": "launch",
+            "mainClass": "baekjoon2178",
+            "projectName": "coding_test_repo"
+        },
+        {
+            "type": "java",
             "name": "baekjoon1520",
             "request": "launch",
             "mainClass": "baekjoon1520",
