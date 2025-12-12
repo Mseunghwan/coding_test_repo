@@ -7,49 +7,45 @@ public class baekjoon2467 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        StringTokenizer st;
+        StringTokenizer st ;
 
         int N = Integer.parseInt(br.readLine());
 
-        st = new StringTokenizer(br.readLine());
+        int[] items = new int[N];
 
-        int[] nums = new int[N];
-        for(int i = 0 ; i < N ; i++){
-            nums[i] = Integer.parseInt(st.nextToken());
+        st = new StringTokenizer(br.readLine());
+        for(int i = 0; i < N; i++){
+            items[i] = Integer.parseInt(st.nextToken());
         }
 
-        // 투포인터로 풀기
-        Arrays.sort(nums);
+        Arrays.sort(items);
 
         int start = 0;
         int end = N - 1;
 
-
-        int min_diff = Integer.MAX_VALUE;
-        int min_start = 0;
-        int min_end = 0;
+        int min_left = 0;
+        int min_right = 0;
+        int min_val = Integer.MAX_VALUE;
 
         while(start < end){
-            int sum = nums[end] + nums[start];
-            
-            if(Math.abs(sum) < min_diff){
-                min_diff = Math.abs(sum);
-                min_start = start;
-                min_end = end;
+            int val = items[start] + items[end];
+            if(Math.abs(val) < min_val) {
+                min_val = Math.abs(val);
+                min_left = start;
+                min_right = end;
             }
-
-            if(sum < 0) {
+            if(val < 0){
                 start ++;
-            } else if(sum > 0){
+            } else if(val > 0){
                 end --;
             } else {
-                min_start = start;
-                min_end = end;
+                min_left = start;
+                min_right = end;
                 break;
             }
         }
 
-        bw.write(String.valueOf(nums[min_start]) + " " + String.valueOf(nums[min_end]));
+        bw.write(String.valueOf(items[min_left]) + " " + String.valueOf(items[min_right]));
         bw.flush();
         bw.close();
         br.close();
